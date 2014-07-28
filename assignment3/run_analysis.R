@@ -1,5 +1,8 @@
-## Important: the script should be run in the "UCI HAR Dataset" directory
-## I do this by typing  > setwd('D:/code/r/assignment3/UCI HAR Dataset')
+
+## 0. download file and get into the directory
+download.file('https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip', 'destfile.zip')
+unzip('destfile.zip')
+setwd('UCI HAR Dataset')
 
 ## 1. load all data, preferably with correct names... (so yeah, the step numbers don't match perfectly...)
 features <- read.table("./features.txt", header = FALSE, sep=" ")
